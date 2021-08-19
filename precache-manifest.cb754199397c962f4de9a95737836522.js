@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70bf81450ecf1c1ed88285154711e6ff",
+    "revision": "57cc7ab6ab1c1f34fe0042927007e01d",
     "url": "/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/4.a8329f31.chunk.css"
   },
   {
-    "revision": "d0447c3d82dbf933537f",
+    "revision": "b8c3bb474bf53d885993",
     "url": "/static/css/main.fc5d9386.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/4.35d7ca74.chunk.js"
   },
   {
-    "revision": "d0447c3d82dbf933537f",
-    "url": "/static/js/main.73efc630.chunk.js"
+    "revision": "b8c3bb474bf53d885993",
+    "url": "/static/js/main.ff0e0e0d.chunk.js"
   },
   {
     "revision": "1399d3ad925434a880b9",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ee6539921d713482b8ccd4d0d23961bb",
     "url": "/static/media/Montserrat-Regular.ee653992.ttf"
+  },
+  {
+    "revision": "c500903f0e3215a29eb293832077efb5",
+    "url": "/static/media/cbse.c500903f.png"
   },
   {
     "revision": "47a7a717679b640ceb1b05d38c480a61",
@@ -62,10 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e79c639294c805688be731921368c8f8",
     "url": "/static/media/googleAssistantLogo.e79c6392.webp"
-  },
-  {
-    "revision": "35ef5e915631be2c31ccdff55b53db29",
-    "url": "/static/media/harvardLogo.35ef5e91.png"
   },
   {
     "revision": "52be31441c8cf8a8a16bd7a228d428bf",
@@ -88,8 +88,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/skill.34409398.svg"
   },
   {
-    "revision": "3b758ef56d398145542e137daa28e392",
-    "url": "/static/media/stanfordLogo.3b758ef5.png"
+    "revision": "d11a46aea778ca23ca61abe20aa5e4ee",
+    "url": "/static/media/sukhmani.d11a46ae.jpeg"
   },
   {
     "revision": "13780cdd0144cacdef25486e2c2503f8",
