@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b45f423eba1add28b661df9895201d4",
+    "revision": "83fcbe3fce6d2d66b0f80087b1faa0b4",
     "url": "/index.html"
   },
   {
-    "revision": "0cf2b7eb4b5da9dbd9b6",
+    "revision": "aeeab1d3b89e9d506f79",
     "url": "/static/css/3.25727338.chunk.css"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/4.a8329f31.chunk.css"
   },
   {
-    "revision": "03be7e7abbe4b88461de",
+    "revision": "efeac1598113f65cfe88",
     "url": "/static/css/main.fc5d9386.chunk.css"
   },
   {
@@ -24,20 +24,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.733002d7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0cf2b7eb4b5da9dbd9b6",
-    "url": "/static/js/3.fdc278d4.chunk.js"
+    "revision": "aeeab1d3b89e9d506f79",
+    "url": "/static/js/3.0cf45980.chunk.js"
   },
   {
     "revision": "175e9d931a7fb31fcd6d",
     "url": "/static/js/4.35d7ca74.chunk.js"
   },
   {
-    "revision": "03be7e7abbe4b88461de",
-    "url": "/static/js/main.5d72c762.chunk.js"
+    "revision": "efeac1598113f65cfe88",
+    "url": "/static/js/main.3f392e01.chunk.js"
   },
   {
-    "revision": "1399d3ad925434a880b9",
-    "url": "/static/js/runtime-main.b76eec7e.js"
+    "revision": "af8aa8aad2401554dc13",
+    "url": "/static/js/runtime-main.c741ef87.js"
   },
   {
     "revision": "21f233e19402cc4a66866a7f31191f0d",
@@ -72,16 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/manOnTable.52be3144.svg"
   },
   {
-    "revision": "829ad0a1deef4d7295adfecdf12df2be",
-    "url": "/static/media/nextuLogo.829ad0a1.webp"
-  },
-  {
     "revision": "ee62cb58630f29a6e6201b49d4c03728",
     "url": "/static/media/pwaLogo.ee62cb58.webp"
-  },
-  {
-    "revision": "25018d29d5ab115bc51c3e9a2d92f90f",
-    "url": "/static/media/saayaHealthLogo.25018d29.webp"
   },
   {
     "revision": "3440939881da8339d1597e8d77cdf850",
@@ -90,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d11a46aea778ca23ca61abe20aa5e4ee",
     "url": "/static/media/sukhmani.d11a46ae.jpeg"
+  },
+  {
+    "revision": "91398644969773df92c28ab0272fce2b",
+    "url": "/static/media/talkie.91398644.png"
   },
   {
     "revision": "13780cdd0144cacdef25486e2c2503f8",
