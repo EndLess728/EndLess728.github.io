@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9bd31a56796b7d0ca8574646e45eccef",
+    "revision": "1cfbf7f1cddd4445ff8dbc36d509f8e5",
     "url": "/index.html"
   },
   {
-    "revision": "72b472e24c7b357828fc",
+    "revision": "6e99a4b48a7ab438e3bd",
     "url": "/static/css/3.df879eac.chunk.css"
   },
   {
-    "revision": "c7928d8d8fa03b370ffe",
+    "revision": "29921a8aeaa3ff663433",
     "url": "/static/css/4.e91a4b36.chunk.css"
   },
   {
-    "revision": "7002f690ccb803da7175",
+    "revision": "2d2c8c98bfa385ff7d2f",
     "url": "/static/css/main.2cca025a.chunk.css"
   },
   {
-    "revision": "c70901097a39683d71b3",
-    "url": "/static/js/2.7fa87710.chunk.js"
+    "revision": "04ee5f70205a3fbab1f1",
+    "url": "/static/js/2.04da1c16.chunk.js"
   },
   {
     "revision": "408f8ade359af8695a328ed937291fdf",
-    "url": "/static/js/2.7fa87710.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.04da1c16.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "72b472e24c7b357828fc",
-    "url": "/static/js/3.7ba8a065.chunk.js"
+    "revision": "6e99a4b48a7ab438e3bd",
+    "url": "/static/js/3.51f271ff.chunk.js"
   },
   {
-    "revision": "c7928d8d8fa03b370ffe",
-    "url": "/static/js/4.d0b5f6ae.chunk.js"
+    "revision": "29921a8aeaa3ff663433",
+    "url": "/static/js/4.636f76aa.chunk.js"
   },
   {
-    "revision": "7002f690ccb803da7175",
-    "url": "/static/js/main.7a8e0e19.chunk.js"
+    "revision": "2d2c8c98bfa385ff7d2f",
+    "url": "/static/js/main.fbc8fc1d.chunk.js"
   },
   {
-    "revision": "fefbf6cc1a64b829e654",
-    "url": "/static/js/runtime-main.a5d4f072.js"
+    "revision": "9b3bb276d12053250992",
+    "url": "/static/js/runtime-main.a8e0c906.js"
   },
   {
     "revision": "21f233e19402cc4a66866a7f31191f0d",
@@ -66,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8c5fa704af698cecb3b4ca39b272ea5b",
     "url": "/static/media/emove.8c5fa704.webp"
+  },
+  {
+    "revision": "227d1ae421b29908fa0702b51475b28d",
+    "url": "/static/media/eventickets.227d1ae4.webp"
   },
   {
     "revision": "e79c639294c805688be731921368c8f8",
@@ -114,5 +118,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "13780cdd0144cacdef25486e2c2503f8",
     "url": "/static/media/talksCardBack.13780cdd.svg"
+  },
+  {
+    "revision": "66c28eed9d48fe241c1b0b275f157a2e",
+    "url": "/static/media/yogavivo.66c28eed.webp"
   }
 ]);
