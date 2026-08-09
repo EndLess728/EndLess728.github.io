@@ -4,8 +4,6 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { CustomCursor } from "@/components/CustomCursor";
 import { Loader } from "@/components/Loader";
-import { ProjectModal } from "@/components/ProjectModal";
-import { ProjectModalProvider } from "@/lib/ProjectModalContext";
 import "./globals.css";
 
 const inter = Inter({
@@ -41,12 +39,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-accent selection:text-white">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          <ProjectModalProvider>
-            <Loader />
-            <CustomCursor />
-            <SmoothScroll>{children}</SmoothScroll>
-            <ProjectModal />
-          </ProjectModalProvider>
+          <Loader />
+          <CustomCursor />
+          <SmoothScroll>{children}</SmoothScroll>
         </ThemeProvider>
       </body>
     </html>

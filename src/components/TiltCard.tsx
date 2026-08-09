@@ -1,22 +1,14 @@
 "use client";
 
-import { useRef, type ReactNode, type MouseEvent, type KeyboardEvent } from "react";
+import { useRef, type ReactNode, type MouseEvent } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 export function TiltCard({
   children,
   className = "",
-  onClick,
-  role,
-  tabIndex,
-  onKeyDown,
 }: {
   children: ReactNode;
   className?: string;
-  onClick?: () => void;
-  role?: string;
-  tabIndex?: number;
-  onKeyDown?: (e: KeyboardEvent<HTMLDivElement>) => void;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const x = useMotionValue(0.5);
@@ -47,10 +39,6 @@ export function TiltCard({
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      onClick={onClick}
-      role={role}
-      tabIndex={tabIndex}
-      onKeyDown={onKeyDown}
       style={{ rotateX, rotateY, scale, transformPerspective: 900 }}
       className={className}
     >

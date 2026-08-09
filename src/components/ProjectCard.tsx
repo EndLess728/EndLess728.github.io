@@ -1,10 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { FaExternalLinkAlt, FaExpandAlt } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaExternalLinkAlt, FaChevronDown } from "react-icons/fa";
 import { TiltCard } from "./TiltCard";
-import { useProjectModal } from "@/lib/ProjectModalContext";
 import type { projects } from "@/data/portfolio";
 
 export function ProjectCard({
@@ -13,7 +13,8 @@ export function ProjectCard({
   project: (typeof projects)[number];
   index: number;
 }) {
-  const { openProject } = useProjectModal();
+  const [expanded, setExpanded] = useState(false);
+  const toggle = () => setExpanded((v) => !v);
 
   return (
     <motion.div
@@ -23,15 +24,7 @@ export function ProjectCard({
       exit={{ opacity: 0, scale: 0.94 }}
       transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
     >
-      <TiltCard
-        onClick={() => openProject(project)}
-        role="button"
-        tabIndex={0}
-        onKeyDown={(e) => {
-          if (e.key === "Enter" || e.key === " ") openProject(project);
-        }}
-        className="hover-target group flex cursor-pointer flex-col overflow-hidden rounded-3xl border border-border bg-surface transition-colors hover:border-accent/40"
-      >
+      <TiltCard className="hover-target group flex flex-col overflow-hidden rounded-3xl border border-border bg-surface transition-colors hover:border-accent/40">
         <div className="relative aspect-[16/10] overflow-hidden bg-surface-hover">
           <Image
             src={project.image}
@@ -40,12 +33,6 @@ export function ProjectCard({
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
-          <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <span className="flex items-center gap-2 rounded-full border border-white/30 bg-black/40 px-4 py-2 text-xs font-semibold text-white backdrop-blur-md">
-              <FaExpandAlt size={11} />
-              View Details
-            </span>
-          </div>
         </div>
 
         <div className="flex flex-1 flex-col gap-4 p-6 sm:p-7">
@@ -75,7 +62,6 @@ export function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Visit ${project.name} website`}
-                onClick={(e) => e.stopPropagation()}
                 className="hover-target flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-accent hover:text-accent"
               >
                 <FaExternalLinkAlt size={12} />
@@ -86,7 +72,7 @@ export function ProjectCard({
           <p className="text-sm text-muted">{project.description}</p>
 
           <ul className="flex flex-col gap-2">
-            {project.bullets.slice(0, 3).map((bullet) => (
+            {project.bullets.slice(0, 2).map((bullet) => (
               <li
                 key={bullet}
                 className="flex gap-2 text-sm leading-relaxed text-muted"
@@ -96,6 +82,45 @@ export function ProjectCard({
               </li>
             ))}
           </ul>
+
+          <AnimatePresence initial={false}>
+            {expanded && (
+              <motion.ul
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                className="flex flex-col gap-2 overflow-hidden"
+              >
+                {project.bullets.slice(2).map((bullet) => (
+                  <li
+                    key={bullet}
+                    className="flex gap-2 text-sm leading-relaxed text-muted"
+                  >
+                    <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" />
+                    {bullet}
+                  </li>
+                ))}
+              </motion.ul>
+            )}
+          </AnimatePresence>
+
+          {project.bullets.length > 2 && (
+            <button
+              type="button"
+              onClick={toggle}
+              aria-expanded={expanded}
+              className="hover-target flex items-center gap-1.5 self-start text-sm font-semibold text-accent"
+            >
+              {expanded ? "Show less" : `Show ${project.bullets.length - 2} more`}
+              <motion.span
+                animate={{ rotate: expanded ? 180 : 0 }}
+                transition={{ duration: 0.25 }}
+              >
+                <FaChevronDown size={11} />
+              </motion.span>
+            </button>
+          )}
 
           <div className="mt-auto flex flex-wrap gap-2 pt-2">
             {project.tags.map((tag) => (
